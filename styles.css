@@ -61,11 +61,11 @@ img {
   text-decoration: underline;
 }
 
-.fas {
+.fas.fa-th {
   opacity: 0.75;
 }
 
-.fas:hover {
+.fas.fa-th:hover {
   opacity: 1;
 }
 
@@ -93,16 +93,73 @@ img {
 .container {
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 
 .search-block {
   max-width: 584px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 2.938rem auto 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .image-container {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+
+.search-container:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-bar {
+  height: 34px;
+  line-height: 34px;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-icon-wrapper {
+  height: 20px;
+  width: 20px;
+  margin-right: 1rem;
+  padding-left: 15px;
+}
+
+.search-icon {
+  display: inline-block;
+  color: #9aa0a6;
+}
+
+.mic-wrapper {
+  height: 15px;
+  width: 15px;
+  margin: 0 18px 3px 5px;
+  padding-left: 1px;
+}
+
+.microphone {
+  display: block;
+  width: 100%;
 }
 
 .search-btns button {
@@ -117,4 +174,17 @@ img {
   text-align: center;
   border: 1px solid #f8f9fa;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-btns button:hover {
+  color: #202124;
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.search-btns button:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
 }
