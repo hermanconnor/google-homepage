@@ -104,7 +104,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 30%);
 }
 
 .image-container {
@@ -187,4 +187,68 @@ img {
 .search-btns button:focus {
   border: 1px solid #4d90fe;
   outline: none;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  line-height: 40px;
+  border-top: 1px solid #dadce0;
+}
+
+.footer-left a,
+.footer-right a {
+  display: inline-block;
+  color: #70757a;
+  font-size: 14px;
+  padding-left: 25px;
+}
+
+.footer-left a:hover,
+.sustainable a:hover,
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-left a:active,
+.sustainable a:active,
+.footer-right a:active {
+  color: #ea4335;
+}
+
+.footer-left {
+  margin-left: 3px;
+}
+
+.footer-right {
+  margin-right: 30px;
+}
+
+.sustainable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sustainable a {
+  display: inline-block;
+  color: #70757a;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+.leaf {
+  width: 20px;
+  height: 20px;
+}
+
+.leaf-image {
+  display: block;
+  width: 100%;
 }
